@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>I am a Computer Science graduate looking for a Software Engineering role. Passionate about coding, problem-solving, and mobile app development.</p>
+    </section>
+    
+    <section id="projects" class="content-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the project. <a href="#">GitHub Link</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the project. <a href="#">GitHub Link</a></p>
+        </div>
+    </section>
+    
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourusername</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        
+        // Show About section by default
+        document.addEventListener("DOMContentLoaded", () => {
+            showSection('about');
+        });
+    </script>
+</body>
+</html>
