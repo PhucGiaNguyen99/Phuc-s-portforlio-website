@@ -47,22 +47,32 @@ nav ul li a:hover {
 
 /* Sections */
 .content-section {
-    padding: 40px;
+    padding: 60px;
     text-align: center;
-    background: white;
-    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
     width: 80%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content-section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h2 {
-    color: #333;
+    color: #ffcc00;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 /* Projects */
