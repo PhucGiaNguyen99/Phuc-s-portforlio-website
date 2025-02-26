@@ -77,22 +77,27 @@ h2 {
 
 /* Projects */
 .project {
-    background-color: #ddd;
-    padding: 15px;
-    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 15px auto;
     width: 70%;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .project a {
-    color: #007BFF;
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 8px 15px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
 .project a:hover {
-    text-decoration: underline;
+    background: #e6b800;
 }
 
 /* Footer */
