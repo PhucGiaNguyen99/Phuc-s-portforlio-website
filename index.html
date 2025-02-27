@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Your Name</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>PHUC NGUYEN</h1>
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('about')">About</a></li>
@@ -21,6 +22,13 @@
     <section id="about" class="content-section">
         <h2>About Me</h2>
         <p>I am a Computer Science graduate looking for a Software Engineering role. Passionate about coding, problem-solving, and mobile app development.</p>
+        <p>
+            "Live as if you were to die tomorrow. Learn as if you were to live forever." - Mahatma Gandhi<br><br>
+            This is one of my favorite quotes because it perfectly reflects my mindset.<br>
+            I strongly believe in giving my best effort in everything I do while continuously learning and growing.<br>
+            I appreciate every small step I take and approach each with curiosity and passion.
+        </p>
+        
     </section>
     
     <section id="projects" class="content-section">
@@ -37,27 +45,30 @@
     
     <section id="contact" class="content-section">
         <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="#">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/yourusername</a></p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:phucgianguyen0199@gmail.com">phucgianguyen0199@gmail.com</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/PhucGiaNguyen99" target="_blank">PhucGiaNguyen99</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/phucgnguyen/" target="_blank">phucgnguyen</a></p>
+            </div>
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="post">
+                    <div class="form-grid">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Phuc Nguyen. All rights reserved.</p>
     </footer>
     
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.content-section').forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(sectionId).style.display = 'block';
-        }
-        
-        // Show About section by default
-        document.addEventListener("DOMContentLoaded", () => {
-            showSection('about');
-        });
-    </script>
+    
 </body>
 </html>

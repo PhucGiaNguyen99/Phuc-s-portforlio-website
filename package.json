@@ -1,0 +1,12 @@
+{
+  "name": "phuc_first_portfolio_website",
+  "version": "1.0.0",
+  "description": "Hey there, my friends! 👋",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
